@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ajouter.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    
+
+
+    <title>Ajouter un Projet</title>
+</head>
+<body>
+    <!-------------------- HEADER START ------------------>
+    <header>
+        <section class="profile">
+            <a href="#" class="settingsbutton"><i class="fa-solid fa-gear"></i></a>
+            <img src="../img/tpPhp.png" alt="profilePicture">
+            <h1>Ayoub Kahfy</h1>
+            <h2>MMI 1 - B2</h2>
+        </section>
+        <hr>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./mesProjets.html">Projets</a></li>
+                <li class="active"><a href="#">Ajouter Projet</a></li>
+                <li><a href="#">Compétences</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <a href="https://cas2.uvsq.fr/cas/login?service=https%3A%2F%2Fbulletins.iut-velizy.uvsq.fr%2Fservices%2FdoAuth.php%3Fhref%3Dhttps%253A%252F%252Fbulletins.iut-velizy.uvsq.fr%252F%253Flogin" target="_blank">
+            <img src="../img/iutLogo.png" alt="logo of school">
+        </a>
+        
+
+        <section class="buttons">
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </section>
+    </header>
+    <!-------------------- HEADER END ------------------>
+
+    <!-------------------- MAIN START ------------------>
+    <main>
+        <section class="main_heading">
+            <h1>Ajouter un Projet</h1>
+            <ul>
+                <li>Ayoub Kahfy | MMI 1 | B2</li>
+                <li>2022 - 2023</li>
+            </ul>
+        </section>
+
+        <article class="addProjectArticle">
+            <form action="#" method="POST">
+                <div class="titre">
+                    <label for="titre">Titre du Projet *</label> <br>
+                    <input type="text" id="titre" name="titre" required>
+                </div>
+
+                <div class="competences_and_AC">
+                    <div class="competences">
+                        <label for="competences">Compétence *</label> <br>
+                        <select id="competences" name="options[]" required>
+                            <option value="C1">C1 - Comprendre</option>
+                            <option value="C2">C2 - Concevoir</option>
+                            <option value="C3">C3 - Exprimer</option>
+                            <option value="C4">C4 - Développer</option>
+                            <option value="C5">C5 - Entreprendre</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="mainImg">
+                    <label for="imgPrincipale">Image Principale *</label> <br>
+                    <input type="file" id="imgPrincipale" name="imgPrincipale" accept="image/*" required>
+                </div>
+
+                <section class="restofForm">
+                    
+                    <div class="descriptionAndEval">
+
+                        <div class="description">
+                            <label for="description">Description *</label> <br>
+                            <textarea name="description" id="description" required>
+
+                            </textarea>
+                        </div>
+
+                        <div class="evaluation">
+                            <h1>Evaluation ( / 3)</h1>
+                            <div class="lesAC">
+                                <select  name="lesAc[]" required class="select2" data-live-search="true">
+                                    <option value="C1">AC14.01 | Exploiter de manière autonome un environnement de développement efficace et productif
+                                    </option>
+                                    <option value="C2">AC14.02 | Produire des pages Web fluides incluant un balisage sémantique efficace et des
+                                        interactions simples</option>
+                                    <option value="C3">AC14.03 | Générer des pages Web à partir de données structurées</option>
+                                    <option value="C4">AC14.04 | Mettre en ligne une application Web en utilisant une solution d’hébergement standard
+                                    </option>
+                                    <option value="C5">AC14.05 | Modéliser les données d’une application Web</option>
+                                </select>
+
+
+                                <select id="evale" name="evale[]" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+
+                            <div class="lesAC">
+                                <select name="lesAc[]" required class="select2" data-live-search="true">
+                                    <option value="C1">AC14.01 | Exploiter de manière autonome un environnement de développement efficace et
+                                        productif
+                                    </option>
+                                    <option value="C2">AC14.02 | Produire des pages Web fluides incluant un balisage sémantique efficace et des
+                                        interactions simples</option>
+                                    <option value="C3">AC14.03 | Générer des pages Web à partir de données structurées</option>
+                                    <option value="C4">AC14.04 | Mettre en ligne une application Web en utilisant une solution d’hébergement
+                                        standard
+                                    </option>
+                                    <option value="C5">AC14.05 | Modéliser les données d’une application Web</option>
+                                </select>
+                            
+                            
+                                <select id="evale" name="evale[]" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+
+                            <div class="lesAC">
+                                <select name="lesAc[]" required class="select2" data-live-search="true">
+                                    <option value="C1">AC14.01 | Exploiter de manière autonome un environnement de développement efficace et
+                                        productif
+                                    </option>
+                                    <option value="C2">AC14.02 | Produire des pages Web fluides incluant un balisage sémantique efficace et des
+                                        interactions simples</option>
+                                    <option value="C3">AC14.03 | Générer des pages Web à partir de données structurées</option>
+                                    <option value="C4">AC14.04 | Mettre en ligne une application Web en utilisant une solution d’hébergement
+                                        standard
+                                    </option>
+                                    <option value="C5">AC14.05 | Modéliser les données d’une application Web</option>
+                                </select>
+                            
+                            
+                                <select id="evale" name="evale[]" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+
+                            <div class="lesAC">
+                                <select name="lesAc[]" required class="select2" data-live-search="true">
+                                    <option value="C1">AC14.01 | Exploiter de manière autonome un environnement de développement efficace et
+                                        productif
+                                    </option>
+                                    <option value="C2">AC14.02 | Produire des pages Web fluides incluant un balisage sémantique efficace et des
+                                        interactions simples</option>
+                                    <option value="C3">AC14.03 | Générer des pages Web à partir de données structurées</option>
+                                    <option value="C4">AC14.04 | Mettre en ligne une application Web en utilisant une solution d’hébergement
+                                        standard
+                                    </option>
+                                    <option value="C5">AC14.05 | Modéliser les données d’une application Web</option>
+                                </select>
+                            
+                            
+                                <select id="evale" name="evale[]" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+
+                            <div class="lesAC">
+                                <select name="lesAc[]" required class="select2" data-live-search="true">
+                                    <option value="C1">AC14.01 | Exploiter de manière autonome un environnement de développement efficace et
+                                        productif
+                                    </option>
+                                    <option value="C2">AC14.02 | Produire des pages Web fluides incluant un balisage sémantique efficace et des
+                                        interactions simples</option>
+                                    <option value="C3">AC14.03 | Générer des pages Web à partir de données structurées</option>
+                                    <option value="C4">AC14.04 | Mettre en ligne une application Web en utilisant une solution d’hébergement
+                                        standard
+                                    </option>
+                                    <option value="C5">AC14.05 | Modéliser les données d’une application Web</option>
+                                </select>
+                            
+                            
+                                <select id="evale" name="evale[]" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="traces">
+                        <label for="traces">Traces * 
+                        </label> 
+                        <p>Sélectionnez plusieurs fichiers en maintenant Cmd sur MAC ou Controle sur Windows</p>
+                        <br>
+                        <input type="file" id="traces" name="traces[]" accept="image/*" required multiple>
+
+                    </div>
+                </section>
+
+                <input type="submit" name="BtnInsererUnProjet" value="Envoyer" class="submitBtn">
+            </form>
+        </article>
+    </main>
+    <!-------------------- MAIN END ------------------>
+    
+    
+
+    <script src="../script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.select2').select2();
+        });
+    </script>
+
+    
+</body>
+</html>

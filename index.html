@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard Portfolio MMI</title>
+</head>
+<body>
+    <!-------------------- HEADER START ------------------>
+    <header>
+        <section class="profile">
+            <a href="#" class="settingsbutton"><i class="fa-solid fa-gear"></i></a>
+            <img src="./img/tpPhp.png" alt="profilePicture">
+            <h1>Ayoub Kahfy</h1>
+            <h2>MMI 1 - B2</h2>
+        </section>
+        <hr>
+
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="./mainPages/mesProjets.html">Projets</a></li>
+                <li><a href="#">Traces</a></li>
+                <li><a href="#">Compétences</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <a href="https://cas2.uvsq.fr/cas/login?service=https%3A%2F%2Fbulletins.iut-velizy.uvsq.fr%2Fservices%2FdoAuth.php%3Fhref%3Dhttps%253A%252F%252Fbulletins.iut-velizy.uvsq.fr%252F%253Flogin">
+            <img src="./img/iutLogo.png" alt="logo of school">
+        </a>
+        
+
+        <section class="buttons">
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </section>
+    </header>
+    <!-------------------- HEADER END ------------------>
+
+    <!-------------------- MAIN START ------------------>
+    <main>
+        <section class="main_heading">
+            <h1>Portfolio Dashboard</h1>
+            <ul>
+                <li>Ayoub Kahfy | MMI 1 | B2</li>
+                <li>2022 - 2023</li>
+            </ul>
+        </section>
+
+        <article class="last_project">
+
+            <section class="last_project_heading">
+                <h1>Dernier Projet</h1>
+                <a href="./mainPages/mesProjets.html">Mes Projets <i class="fa-solid fa-arrow-right"></i></a>
+            </section>
+
+            <img src="./img/tpPhp.png" alt="image of last project">
+
+            <section class="last_project_footer">
+                <h1>Concevoir un site web avec une source de données</h1>
+                <h2>Développement Web</h2>
+                <ul>
+                    <li>AC14.01 | Exploiter de manière autonome un environnement de développement efficace et productif</li>
+                    <li>AC14.02 | Produire des pages Web fluides incluant un balisage sémantique efficace et des interactions simples</li>
+                    <li>AC14.03 | Générer des pages Web à partir de données structurées</li>
+                    <li>AC14.04 | Mettre en ligne une application Web en utilisant une solution d’hébergement standard</li>
+                    <li>AC14.05 | Modéliser les données d’une application Web</li>
+                </ul>
+            </section>
+
+        </article>
+        
+        <article class="otherArticles">
+            <section class="section1">
+                <h1>Moyennes pour chaque compétence</h1>
+                <canvas id="myChart"></canvas>
+            </section>
+            
+            <div class="otherSections">
+                <section class="section2">
+                    <h1>Classement <span>(sur 56 élèves)</span></h1>
+                    <ul class="classement_competences">
+                        <li class="competence"><span>C1</span> <span>Développer</span> <span>1</span></li>
+                        <li class="competence"><span>C1</span> <span>Développer</span> <span>1</span></li>
+                        <li class="competence"><span>C1</span> <span>Développer</span> <span>1</span></li>
+                        <li class="competence"><span>C1</span> <span>Développer</span> <span>1</span></li>
+                        <li class="competence"><span>C1</span> <span>Développer</span> <span>1</span></li>
+                    </ul>
+                </section>
+
+                <section class="section3">
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </section>
+                <section class="section4">
+                    <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+                </section>
+            </div>
+            
+        </article>
+    </main>
+    <!-------------------- MAIN END ------------------>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

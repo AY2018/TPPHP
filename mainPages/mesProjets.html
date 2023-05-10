@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../mesProjets.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mes Projets</title>
+</head>
+<body>
+    <!-------------------- HEADER START ------------------>
+    <header>
+        <section class="profile">
+            <a href="#" class="settingsbutton"><i class="fa-solid fa-gear"></i></a>
+            <img src="../img/tpPhp.png" alt="profilePicture">
+            <h1>Ayoub Kahfy</h1>
+            <h2>MMI 1 - B2</h2>
+        </section>
+        <hr>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="active"><a href="./mesProjets.html">Projets</a></li>
+                <li><a href="./ajouter.html">Ajouter Projet</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <a href="https://cas2.uvsq.fr/cas/login?service=https%3A%2F%2Fbulletins.iut-velizy.uvsq.fr%2Fservices%2FdoAuth.php%3Fhref%3Dhttps%253A%252F%252Fbulletins.iut-velizy.uvsq.fr%252F%253Flogin" target="_blank">
+            <img src="../img/iutLogo.png" alt="logo of school">
+        </a>
+        
+
+        <section class="buttons">
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </section>
+    </header>
+    <!-------------------- HEADER END ------------------>
+
+    <!-------------------- MAIN START ------------------>
+    <main>
+        <section class="main_heading">
+            <h1>Mes Projets</h1>
+            <ul>
+                <li>Ayoub Kahfy | MMI 1 | B2</li>
+                <li>2022 - 2023</li>
+            </ul>
+        </section>
+
+        <article class="myProjectsGallery">
+            <section class="ProjectsSortBts">
+                
+                <a href="#" onclick="listAppear()">
+                    <i class="fa-solid fa-list"></i>
+                </a>
+                <a href="#" class="displayIconsBtn" onclick="iconsAppear()">
+                    <i class="fa-regular fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                    <i class="fa-regular fa-square"></i>
+                </a>
+
+                <a href="./ajouter.html" class="addProject"><i class="fa-solid fa-plus"></i></a>
+            </section>
+
+            <article class="galleryList" id="galleryList">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Compétences</th>
+                            <th>AC</th>
+                            <th>Note</th>
+                            <th>Rang</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Site PhP</td>
+                            <td>Développement</td>
+                            <td>C1, C2, C4, C6</td>
+                            <td>2.5 / 3</td>
+                            <td>1 / 56</td>
+                        </tr>
+                        <tr>
+                            <td>Site PhP</td>
+                            <td>Développement</td>
+                            <td>C1, C2, C4, C6</td>
+                            <td>2.5 / 3</td>
+                            <td>1 / 56</td>
+                        </tr>
+                        <tr>
+                            <td>Site PhP</td>
+                            <td>Développement</td>
+                            <td>C1, C2, C4, C6</td>
+                            <td>2.5 / 3</td>
+                            <td>1 / 56</td>
+                        </tr>
+                        <tr>
+                            <td>Site PhP</td>
+                            <td>Développement</td>
+                            <td>C1, C2, C4, C6</td>
+                            <td>2.5 / 3</td>
+                            <td>1 / 56</td>
+                        </tr>
+                        <tr>
+                            <td>Site PhP</td>
+                            <td>Développement</td>
+                            <td>C1, C2, C4, C6</td>
+                            <td>2.5 / 3</td>
+                            <td>1 / 56</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+
+            <article class="gallery galleryIcons" id="galleryIcons">
+
+                <section class="projectIcon">
+                    <img src="../img/tpPhp.png" alt="Photo Projet">
+                    <a href="./projet.html" class="projectIconText">
+                        <div class="projectIconText_section">
+                            <div class="porjectIconText_Title">
+                                <h1>Dev</h1>
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                            </div>
+                            <p class="porjectIconText_Note">2 / 3</p>
+                        </div>
+                        <div class="projectIconText_Grade">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="projectIconCompetence">C1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, enim!</td>
+                                        <td>2/3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, enim!</td>
+                                        <td>2/3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, enim!</td>
+                                        <td>2/3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, enim!</td>
+                                        <td>2/3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, enim!</td>
+                                        <td>2/3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </a>
+                </section>
+            </article>
+            
+        </article>
+    </main>
+    <!-------------------- MAIN END ------------------>
+    
+    
+
+    <script src="../script.js"></script>
+    
+</body>
+</html>
